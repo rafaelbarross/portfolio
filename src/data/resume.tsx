@@ -145,7 +145,7 @@ export const DATA = {
       dates: "Out 2024 - Mai 2025",
       active: true,
       description:
-        "[Bingo Brasil](https://preparaflix.com.br) foi desenvolvido por meio de um projeto de pesquisa do [Campus Arapiraca](https://www.linkedin.com/school/instituto-federal-de-alagoas-if-al), o invento nomeado PreparaFlix agrupa cursos de varias áreas, com videoaulas sobre tópicos do conteúdo programático de Português e Matemática disposto no edital do certame, além de simulados, quizzes e a possibilidade dos/as participantes integrarem o ranking de acertos com outros/as",
+        "[PreparaFlix](https://preparaflix.com.br) foi desenvolvido por meio de um projeto de pesquisa do [Campus Arapiraca](https://www.linkedin.com/school/instituto-federal-de-alagoas-if-al), o invento nomeado PreparaFlix agrupa cursos de varias áreas, com videoaulas sobre tópicos do conteúdo programático de Português e Matemática disposto no edital do certame, além de simulados, quizzes e a possibilidade dos/as participantes integrarem o ranking de acertos com outros/as",
       technologies: [
         "Next.js",
         "Typecript",
