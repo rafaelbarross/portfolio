@@ -1,0 +1,29 @@
+{
+  "sections": {
+    "about": "Sobre",
+    "work": "Experiência de trabalho",
+    "education": "Educação",
+    "skills": "Skills"
+  },
+  "work": {
+    "present": "o momento"
+  },
+  "projects": {
+    "badge": "Meus Projetos",
+    "title": "Confira meus últimos trabalhos",
+    "description": "Trabalhei em uma variedade de projetos, de sites simples a aplicativos web complexos. Aqui estão alguns dos meus favoritos.",
+    "pageBadge": "Projetos",
+    "pageTitle": "eu gosto de construir coisas",
+    "pageDescription": "Eu criei uma variedade de projetos que vão desde aplicativos web, aplicativos Android, projetos de código aberto, templates e muito mais. Alguns deles se tornaram negócios que geram dinheiro. Aqui estão alguns dos meus favoritos."
+  },
+  "contact": {
+    "badge": "Contato",
+    "title": "Entre em contato",
+    "beforeLink": "Quer bater um papo? Basta me enviar uma dm",
+    "linkText": "com uma pergunta direta no instagram",
+    "afterLink": "e responderei sempre que puder."
+  },
+  "nav": {
+    "projects": "Projetos"
+  }
+}

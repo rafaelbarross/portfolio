@@ -1,0 +1,29 @@
+{
+  "sections": {
+    "about": "About",
+    "work": "Work Experience",
+    "education": "Education",
+    "skills": "Skills"
+  },
+  "work": {
+    "present": "Present"
+  },
+  "projects": {
+    "badge": "My Projects",
+    "title": "Check out my latest work",
+    "description": "I've worked on a variety of projects, from simple websites to complex web applications. Here are some of my favorites.",
+    "pageBadge": "Projects",
+    "pageTitle": "I like building things",
+    "pageDescription": "I've built a variety of projects ranging from web apps, Android apps, open source projects, templates and more. Some have become businesses that generate revenue. Here are some of my favorites."
+  },
+  "contact": {
+    "badge": "Contact",
+    "title": "Get in touch",
+    "beforeLink": "Want to chat? Just send me a dm",
+    "linkText": "with a direct message on instagram",
+    "afterLink": "and I'll respond whenever I can."
+  },
+  "nav": {
+    "projects": "Projects"
+  }
+}
