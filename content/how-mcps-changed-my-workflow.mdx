@@ -1,0 +1,109 @@
+---
+title: "How MCPs changed my workflow"
+publishedAt: "2025-04-16"
+summary: "MCPs integrated into Claude Code eliminated context switching from my daily routine. Trello, GitHub, Chrome DevTools, Context7 and Google Calendar — all without leaving the terminal."
+locale: "en"
+---
+
+A few months ago I posted on LinkedIn about MCPs and how they changed the way I work. I got a comment asking me to go deeper, and I promised to write a proper post about it. This is that post.
+
+## What are MCPs?
+
+MCP (Model Context Protocol) is an open protocol created by Anthropic that allows language models to connect to external tools in a standardized way. In practice, you integrate services like Trello, GitHub, Chrome DevTools and Google Calendar directly into your AI assistant — and it can read and write to those tools while you have a conversation.
+
+With **Claude Code**, this becomes especially powerful because the agent already lives in your terminal, in the context of your code.
+
+## The problem MCPs solve
+
+The biggest enemy of productivity isn't lack of time. It's **context switching**.
+
+You're debugging a bug. You need to create a Trello card. You open the browser, navigate to the board, think about the structure, write the title, describe the problem, add the labels... by the time you get back to the code, you've lost your train of thought.
+
+Multiplied by 10, 20 times a day, that's an absurd amount of wasted focus.
+
+MCPs solve this because the tools come to you, not the other way around.
+
+## The MCPs I use daily
+
+### Trello
+
+Before integrating Trello, creating a card was a manual and tedious process. Now I simply describe what needs to be done:
+
+```
+create a trello card: bug on POST /exercise-programs endpoint —
+returns 500 when user doesn't have permission. Add to BUG list
+with BACKEND label.
+```
+
+Claude creates the card, already structured, with a formatted description, correct labels and a checklist when it makes sense. What used to take 3-4 minutes now takes 10 seconds.
+
+I also use it to reorganize sprint priorities, move cards between lists and check what's in progress without leaving the terminal.
+
+### GitHub
+
+PR review is one of the most attention-consuming tasks. With the GitHub MCP integrated, I can:
+
+- List open PRs and filter by author or status
+- Read a full PR diff and ask for an impact analysis
+- Generate pull request descriptions from commit history
+- Comment on PRs with agent-generated context
+
+The most useful part day-to-day is **PR description generation**. Instead of writing from scratch, the agent reads the commits, understands what was done and generates a structured description — summary, technical changes, how to test.
+
+### Chrome DevTools
+
+This is the MCP that surprises people the most when they see it for the first time.
+
+The agent can control the browser: navigate to a URL, inspect elements, read console errors, analyze network requests and even take screenshots — all while you're discussing the problem.
+
+A real example: I was debugging a layout issue that only appeared on a specific screen. Instead of switching back and forth between terminal and DevTools, I described the problem, the agent opened the browser, navigated to the page, inspected the problematic element and showed me exactly which CSS rule was causing the conflict.
+
+```
+navigate to localhost:3000/dashboard and check if there are any console errors
+```
+
+### Context7
+
+Outdated documentation is a classic LLM problem. Context7 solves this by fetching the latest docs for libs in real time.
+
+Instead of the agent answering based on what it learned during training (which may be outdated), it fetches the current documentation for the library and responds based on that.
+
+I use it constantly when working with fast-moving libs — Next.js, Tailwind, Zod, TanStack Query. The difference in response quality is noticeable.
+
+```
+how do I configure the i18n middleware in next-intl v4?
+```
+
+The agent resolves the library ID, fetches the docs for the correct version and responds based on what's up to date today.
+
+### Google Calendar
+
+Smaller visual impact, but very useful during planning. I check availability, see meetings for the day and plan focus blocks without opening Google Calendar.
+
+```
+what do I have tomorrow morning? I want to block 2h for focused work
+```
+
+## What really changed
+
+The change isn't just speed. It's **focus**.
+
+With MCPs, I can keep my thinking on the problem while the tools work around me. The bug's logic, the feature's architecture, the task's context — all of it stays intact because I didn't have to leave the terminal to make things happen.
+
+Less context switching, less friction, more delivery.
+
+## How to get started
+
+If you use **Claude Code**, configuring MCPs is straightforward:
+
+1. Open Claude Code settings
+2. Go to **Extensions > MCP Servers**
+3. Add the servers you want to use
+
+Most popular MCPs have configuration docs on the [MCP Hub](https://github.com/modelcontextprotocol/servers). The process is basically add the server, authenticate and start using.
+
+Start with one or two MCPs from the tools you already use. The value becomes evident quickly.
+
+---
+
+If you have questions about a specific MCP or how to integrate it into your workflow, feel free to reach out — I promised this post to Sandro and it deserved to be detailed hehe.

@@ -1,10 +1,17 @@
 import { cn } from "@/lib/utils";
-import { Inter as FontSans } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const fontSans = FontSans({
+const geist = Geist({
   subsets: ["latin"],
   variable: "--font-sans",
+  weight: ["400", "500", "600", "700"],
+});
+
+const geistMono = Geist_Mono({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-mono",
 });
 
 export default function RootLayout({
@@ -16,8 +23,9 @@ export default function RootLayout({
     <html suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6",
-          fontSans.variable
+          "min-h-screen bg-background font-sans antialiased",
+          geist.variable,
+          geistMono.variable
         )}
       >
         {children}
