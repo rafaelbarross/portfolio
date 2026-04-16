@@ -1,5 +1,13 @@
-import { Code, HomeIcon } from "lucide-react";
 import { Icons } from "@/components/icons";
+import { HomeIcon, BookOpen } from "lucide-react";
+import { ReactLight } from "@/components/ui/svgs/reactLight";
+import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
+import { Typescript } from "@/components/ui/svgs/typescript";
+import { Nodejs } from "@/components/ui/svgs/nodejs";
+import { Python } from "@/components/ui/svgs/python";
+import { Golang } from "@/components/ui/svgs/golang";
+import { Postgresql } from "@/components/ui/svgs/postgresql";
+import { Docker } from "@/components/ui/svgs/docker";
 
 type Locale = "en" | "pt";
 
@@ -10,7 +18,7 @@ const SHARED = {
   initials: "RB",
   url: "https://rafaelbarros.vercel.app",
   location: "Junqueiro, Brazil",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
+  locationLink: "https://www.google.com/maps/place/Junqueiro,+Alagoas",
   avatarUrl: "/me.png",
   skills: [
     "React",
@@ -32,6 +40,16 @@ const SHARED = {
     "Figma",
     "Zod",
     "TanStack Query",
+  ],
+  skillIcons: [
+    { name: "React", icon: ReactLight },
+    { name: "Next.js", icon: NextjsIconDark },
+    { name: "Typescript", icon: Typescript },
+    { name: "Node.js", icon: Nodejs },
+    { name: "Python", icon: Python },
+    { name: "Go", icon: Golang },
+    { name: "Postgres", icon: Postgresql },
+    { name: "Docker", icon: Docker },
   ],
   contact: {
     email: "rafaelbarros.contact@gmail.com",
@@ -87,7 +105,7 @@ const CONTENT = {
       "Software Engineer with 4+ years of experience building modern web applications — from internal tools and institutional systems to product-oriented platforms. I work with React, Next.js, Node.js and TypeScript, focusing on clean architecture, component design and REST API integration. Currently working at [Edge Innovation Center](https://www.linkedin.com/company/edge-inovacao/posts/?feedView=all) as a Full Stack Developer. Previously worked for 3+ years as Frontend Developer at [DIT](https://www.linkedin.com/company/dit-ifal). Creator of [Agendime](https://agendime.com.br), a scheduling SaaS built from scratch. Currently pursuing a Bachelor's in Information Systems at [IFAL](https://www.linkedin.com/school/instituto-federal-de-alagoas-if-al).",
     navbar: [
       { href: "/", icon: HomeIcon, label: "Home" },
-      { href: "/projects", icon: Code, label: "Projects" },
+      { href: "/blog", icon: BookOpen, label: "Blog" },
     ],
     work: [
       {
@@ -108,11 +126,11 @@ const CONTENT = {
         badges: ["Freelance"],
         location: "Arapiraca, Alagoas, Brazil · Remote",
         title: "Frontend Engineer",
-        logoUrl: "/nex.png",
+        logoUrl: "",
         start: "Aug 2025",
         end: null,
         description:
-          "Frontend Engineer responsible for building and evolving Arena Clash, focused on delivering a fast, scalable, and maintainable web experience. Worked with product and design to transform requirements into polished UI features, ensuring high performance, accessibility, and consistent UX across all devices. Contributed to frontend architecture, component design, and backend API integration, while improving code quality through reviews and best practices.",
+          "Frontend Engineer responsible for building and evolving Arena Clash, focused on delivering a fast, scalable, and maintainable web experience. Worked with product and design to transform requirements into polished UI features, ensuring high performance, accessibility, and consistent UX across all devices.",
       },
       {
         company: "Fábrica de Heróis",
@@ -136,7 +154,7 @@ const CONTENT = {
         start: "Mar 2023",
         end: null,
         description:
-          "Working as Frontend Developer at DIT since March 2023, leading the development of modern web applications using React, Next.js, Vite.js and TypeScript. Key contributions include implementing new business features, REST API integration and consumption, and developing responsive interfaces focused on performance and accessibility. Significantly contributed to the project's tech stack modernization, implementing development best practices and code standards, agile methodologies, participating in code reviews, and maintaining effective communication between development teams.",
+          "Working as Frontend Developer at DIT since March 2023, leading the development of modern web applications using React, Next.js, Vite.js and TypeScript. Key contributions include implementing new business features, REST API integration and consumption, and developing responsive interfaces focused on performance and accessibility.",
       },
     ],
     education: [
@@ -199,17 +217,11 @@ const CONTENT = {
           "Typescript",
           "React.js",
           "TailwindCSS",
-          "CSS",
-          "HTML",
-          "Material Tailwind",
           "Framer Motion",
           "Cypress",
           "Vitest",
-          "Yup",
           "Zod",
           "SWR",
-          "Matomo",
-          "Sharp",
         ],
         links: [
           {
@@ -233,11 +245,8 @@ const CONTENT = {
           "React.js",
           "TypeScript",
           "TailwindCSS",
-          "HTML",
-          "CSS",
           "Radix UI",
           "Shadcn UI",
-          "Embla Carousel",
         ],
         links: [
           {
@@ -255,7 +264,7 @@ const CONTENT = {
         dates: "Feb 2025 - Feb 2025",
         active: true,
         description:
-          "[English Learning AI](https://english-ai.vercel.app/) is a platform designed to help users learn English interactively and engagingly, using generative AI to provide instant and personalized feedback during the learning process. Features quizzes, chat, and text correction.",
+          "[English Learning AI](https://english-ai.vercel.app/) is a platform designed to help users learn English interactively using generative AI to provide instant and personalized feedback. Features quizzes, chat, and text correction.",
         technologies: [
           "Next.js",
           "Typescript",
@@ -280,15 +289,8 @@ const CONTENT = {
         dates: "Jan 2024 - Jan 2024",
         active: true,
         description:
-          "[Barbershop](https://barbearia-site.vercel.app) is a website developed for a barbershop. The main goal was to create an attractive and functional online presence, allowing customers to schedule services, view information about the barbershop, and get in touch easily.",
-        technologies: [
-          "HTML",
-          "JavaScript",
-          "CSS",
-          "TailwindCSS",
-          "Alpine.js",
-          "AOS",
-        ],
+          "[Barbershop](https://barbearia-site.vercel.app) is a website developed for a barbershop, allowing customers to schedule services, view information, and get in touch easily.",
+        technologies: ["HTML", "JavaScript", "CSS", "TailwindCSS", "Alpine.js", "AOS"],
         links: [
           {
             type: "Website",
@@ -305,15 +307,8 @@ const CONTENT = {
         dates: "Jan 2024 - Jan 2024",
         active: true,
         description:
-          "[Enviar Sem Salvar](https://enviar-sem-salvar.vercel.app) is a website that makes it easy to send WhatsApp messages without saving the number to your contacts, making the process faster and more efficient.",
-        technologies: [
-          "Next.js",
-          "React.js",
-          "TypeScript",
-          "TailwindCSS",
-          "HTML",
-          "CSS",
-        ],
+          "[Enviar Sem Salvar](https://enviar-sem-salvar.vercel.app) makes it easy to send WhatsApp messages without saving the number to your contacts, making the process faster and more efficient.",
+        technologies: ["Next.js", "React.js", "TypeScript", "TailwindCSS"],
         links: [
           {
             type: "Website",
@@ -330,17 +325,8 @@ const CONTENT = {
         dates: "Apr 2024 - May 2024",
         active: true,
         description:
-          "[Bingo Brasil](https://bingobrasil.vercel.app) is an online bingo platform with a login area and admin panel to manage games in real time, allowing administrators to create and manage matches efficiently.",
-        technologies: [
-          "Vite.js",
-          "JavaScript",
-          "React.js",
-          "TailwindCSS",
-          "Firebase",
-          "CSS",
-          "HTML",
-          "Material Tailwind",
-        ],
+          "[Bingo Brasil](https://bingobrasil.vercel.app) is an online bingo platform with a login area and admin panel to manage games in real time.",
+        technologies: ["Vite.js", "JavaScript", "React.js", "TailwindCSS", "Firebase"],
         links: [
           {
             type: "Website",
@@ -357,16 +343,8 @@ const CONTENT = {
         dates: "Jul 2023 - Dec 2023",
         active: true,
         description:
-          "[Planeta Mirim](https://planetam.vercel.app) is an outreach project developed by 3rd-year students of the integrated technical computing course at IFAL, aimed at raising children's awareness about the importance of environmental preservation and promoting actions that encourage sustainability.",
-        technologies: [
-          "Vite.js",
-          "JavaScript",
-          "React.js",
-          "TailwindCSS",
-          "PDF.js",
-          "Flowbite",
-          "Swiper",
-        ],
+          "[Planeta Mirim](https://planetam.vercel.app) is an outreach project aimed at raising children's awareness about environmental preservation and sustainability.",
+        technologies: ["Vite.js", "JavaScript", "React.js", "TailwindCSS", "PDF.js"],
         links: [
           {
             type: "Website",
@@ -387,7 +365,7 @@ const CONTENT = {
       "Software Engineer com mais de 4 anos de experiência construindo aplicações web modernas — de ferramentas internas e sistemas institucionais a plataformas orientadas a produto. Trabalho com React, Next.js, Node.js e TypeScript, com foco em arquitetura limpa, design de componentes e integração com APIs REST. Atualmente atuando no [Centro de Inovação Edge](https://www.linkedin.com/company/edge-inovacao/posts/?feedView=all) como Full Stack Developer. Anteriormente trabalhei por 3+ anos como Frontend Developer no [DIT](https://www.linkedin.com/company/dit-ifal). Criador do [Agendime](https://agendime.com.br), SaaS de agendamentos desenvolvido do zero. Cursando Bacharelado em Sistemas de Informação no [IFAL](https://www.linkedin.com/school/instituto-federal-de-alagoas-if-al).",
     navbar: [
       { href: "/", icon: HomeIcon, label: "Home" },
-      { href: "/projects", icon: Code, label: "Projetos" },
+      { href: "/blog", icon: BookOpen, label: "Blog" },
     ],
     work: [
       {
@@ -408,11 +386,11 @@ const CONTENT = {
         badges: ["Freelance"],
         location: "Arapiraca, Alagoas, Brasil · Remoto",
         title: "Frontend Engineer",
-        logoUrl: "/nex.png",
+        logoUrl: "",
         start: "ago 2025",
         end: null,
         description:
-          "Frontend Engineer responsável por construir e evoluir o Arena Clash, com foco em entregar uma experiência web rápida, escalável e de fácil manutenção. Trabalhei com produto e design para transformar requisitos em features de UI polidas, garantindo alta performance, acessibilidade e UX consistente em todos os dispositivos. Contribuí para arquitetura frontend, design de componentes e integração com APIs backend, além de melhorar a qualidade do código através de revisões e boas práticas.",
+          "Frontend Engineer responsável por construir e evoluir o Arena Clash, com foco em entregar uma experiência web rápida, escalável e de fácil manutenção. Trabalhei com produto e design para transformar requisitos em features de UI polidas, garantindo alta performance, acessibilidade e UX consistente em todos os dispositivos.",
       },
       {
         company: "Fábrica de Heróis",
@@ -436,7 +414,7 @@ const CONTENT = {
         start: "mar 2023",
         end: null,
         description:
-          "Atuando como Desenvolvedor Front-end no DIT desde março de 2023, lidero o desenvolvimento de aplicações web modernas utilizando React, Next.js, Vite.js e TypeScript. Minhas contribuições principais incluem a implementação de novas funcionalidades para o negócio, integração e consumo de APIs REST, e desenvolvimento de interfaces responsivas com foco em desempenho e acessibilidade. Contribuí significativamente para a modernização da pilha tecnológica do projeto, implementando boas práticas de desenvolvimento e padrões de código, metodologias ágeis, participando de revisões de código e mantendo uma comunicação eficaz entre os times de desenvolvimento.",
+          "Atuando como Desenvolvedor Front-end no DIT desde março de 2023, lidero o desenvolvimento de aplicações web modernas utilizando React, Next.js, Vite.js e TypeScript. Minhas contribuições principais incluem a implementação de novas funcionalidades para o negócio, integração e consumo de APIs REST, e desenvolvimento de interfaces responsivas com foco em desempenho e acessibilidade.",
       },
     ],
     education: [
@@ -493,23 +471,17 @@ const CONTENT = {
         dates: "Out 2024 - Mai 2025",
         active: true,
         description:
-          "[PreparaFlix](https://preparaflix.com.br) foi desenvolvido por meio de um projeto de pesquisa do [Campus Arapiraca](https://www.linkedin.com/school/instituto-federal-de-alagoas-if-al). Agrupa cursos de várias áreas, com videoaulas sobre tópicos do conteúdo programático de Português e Matemática dispostos no edital do certame, além de simulados, quizzes e a possibilidade dos/as participantes integrarem o ranking de acertos.",
+          "[PreparaFlix](https://preparaflix.com.br) foi desenvolvido por meio de um projeto de pesquisa do [Campus Arapiraca](https://www.linkedin.com/school/instituto-federal-de-alagoas-if-al). Agrupa cursos de várias áreas, com videoaulas, simulados, quizzes e ranking de acertos.",
         technologies: [
           "Next.js",
           "Typescript",
           "React.js",
           "TailwindCSS",
-          "CSS",
-          "HTML",
-          "Material Tailwind",
           "Framer Motion",
           "Cypress",
           "Vitest",
-          "Yup",
           "Zod",
           "SWR",
-          "Matomo",
-          "Sharp",
         ],
         links: [
           {
@@ -527,17 +499,14 @@ const CONTENT = {
         dates: "Jan 2025 - Fev 2025",
         active: true,
         description:
-          "[Café Engenho do Queijo](https://cafeengenhodoqueijo.vercel.app) é um site desenvolvido para uma cafeteria local. O objetivo principal era criar uma presença online atraente e funcional, permitindo que os clientes visualizassem informações sobre a cafeteria e entrassem em contato facilmente.",
+          "[Café Engenho do Queijo](https://cafeengenhodoqueijo.vercel.app) é um site desenvolvido para uma cafeteria local. O objetivo principal era criar uma presença online atraente e funcional.",
         technologies: [
           "Next.js",
           "React.js",
           "TypeScript",
           "TailwindCSS",
-          "HTML",
-          "CSS",
           "Radix UI",
           "Shadcn UI",
-          "Embla Carousel",
         ],
         links: [
           {
@@ -555,7 +524,7 @@ const CONTENT = {
         dates: "Fev 2025 - Fev 2025",
         active: true,
         description:
-          "[English Learning AI](https://english-ai.vercel.app/) é uma plataforma desenvolvida para ajudar os usuários a aprender inglês de forma interativa e envolvente, utilizando inteligência artificial generativa para fornecer feedback instantâneo e personalizado durante o processo de aprendizado. Conta com quiz, chat e correção de textos.",
+          "[English Learning AI](https://english-ai.vercel.app/) é uma plataforma desenvolvida para ajudar os usuários a aprender inglês de forma interativa, utilizando inteligência artificial generativa para fornecer feedback instantâneo e personalizado.",
         technologies: [
           "Next.js",
           "Typescript",
@@ -580,15 +549,8 @@ const CONTENT = {
         dates: "Jan 2024 - Jan 2024",
         active: true,
         description:
-          "[Barbershop](https://barbearia-site.vercel.app) é um site desenvolvido para barbearia. O objetivo principal era criar uma presença online atraente e funcional, permitindo que os clientes agendassem serviços, visualizassem informações sobre a barbearia e entrassem em contato facilmente.",
-        technologies: [
-          "HTML",
-          "JavaScript",
-          "CSS",
-          "TailwindCSS",
-          "Alpine.js",
-          "AOS",
-        ],
+          "[Barbershop](https://barbearia-site.vercel.app) é um site desenvolvido para barbearia, permitindo que os clientes agendassem serviços e entrassem em contato facilmente.",
+        technologies: ["HTML", "JavaScript", "CSS", "TailwindCSS", "Alpine.js", "AOS"],
         links: [
           {
             type: "Website",
@@ -605,15 +567,8 @@ const CONTENT = {
         dates: "Jan 2024 - Jan 2024",
         active: true,
         description:
-          "[Enviar Sem Salvar](https://enviar-sem-salvar.vercel.app) é um site que facilita o envio de mensagens pelo WhatsApp sem a necessidade de salvar o número no contato do celular, tornando o processo mais rápido e eficiente.",
-        technologies: [
-          "Next.js",
-          "React.js",
-          "TypeScript",
-          "TailwindCSS",
-          "HTML",
-          "CSS",
-        ],
+          "[Enviar Sem Salvar](https://enviar-sem-salvar.vercel.app) é um site que facilita o envio de mensagens pelo WhatsApp sem a necessidade de salvar o número no contato.",
+        technologies: ["Next.js", "React.js", "TypeScript", "TailwindCSS"],
         links: [
           {
             type: "Website",
@@ -630,17 +585,8 @@ const CONTENT = {
         dates: "Abr 2024 - Mai 2024",
         active: true,
         description:
-          "[Bingo Brasil](https://bingobrasil.vercel.app) é um site para bingo online com área de login e painel administrativo para gerenciar os jogos em tempo real, permitindo que os administradores criem e gerenciem partidas de forma eficiente.",
-        technologies: [
-          "Vite.js",
-          "JavaScript",
-          "React.js",
-          "TailwindCSS",
-          "Firebase",
-          "CSS",
-          "HTML",
-          "Material Tailwind",
-        ],
+          "[Bingo Brasil](https://bingobrasil.vercel.app) é um site para bingo online com área de login e painel administrativo para gerenciar os jogos em tempo real.",
+        technologies: ["Vite.js", "JavaScript", "React.js", "TailwindCSS", "Firebase"],
         links: [
           {
             type: "Website",
@@ -657,16 +603,8 @@ const CONTENT = {
         dates: "Jul 2023 - Dez 2023",
         active: true,
         description:
-          "[Planeta Mirim](https://planetam.vercel.app) é um projeto de extensão desenvolvido pelos estudantes do 3° ano do curso técnico integrado em informática do IFAL, com o objetivo de conscientizar crianças sobre a importância da preservação do meio ambiente e promover ações que incentivem a sustentabilidade.",
-        technologies: [
-          "Vite.js",
-          "JavaScript",
-          "React.js",
-          "TailwindCSS",
-          "PDF.js",
-          "Flowbite",
-          "Swiper",
-        ],
+          "[Planeta Mirim](https://planetam.vercel.app) é um projeto de extensão desenvolvido pelos estudantes do IFAL para conscientizar crianças sobre a importância da preservação do meio ambiente.",
+        technologies: ["Vite.js", "JavaScript", "React.js", "TailwindCSS", "PDF.js"],
         links: [
           {
             type: "Website",

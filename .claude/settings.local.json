@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(pnpm add:*)",
+      "Bash(rm \"C:/Users/rafag/Documents/GitHub/portfolio/src/app/page.tsx\" \"C:/Users/rafag/Documents/GitHub/portfolio/src/app/projects/page.tsx\" \"C:/Users/rafag/Documents/GitHub/portfolio/src/app/blog/page.tsx\" \"C:/Users/rafag/Documents/GitHub/portfolio/src/app/blog/[slug]/page.tsx\")",
+      "Bash(rmdir \"C:/Users/rafag/Documents/GitHub/portfolio/src/app/projects\" \"C:/Users/rafag/Documents/GitHub/portfolio/src/app/blog/[slug]\" \"C:/Users/rafag/Documents/GitHub/portfolio/src/app/blog\")",
+      "Bash(pnpm build:*)",
+      "WebFetch(domain:next-intl.dev)",
+      "Bash(grep -E \"\\\\.\\(ts|tsx|js|jsx|json|md\\)$\")",
+      "Bash(xargs ls *)",
+      "mcp__mcp-server-github__list_commits",
+      "mcp__mcp-server-github__get_file_contents"
+    ]
+  }
+}
