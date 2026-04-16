@@ -59,7 +59,9 @@ export default async function BlogPage({
           </span>
         </h1>
         <p className="text-sm text-muted-foreground mb-8">
-          My thoughts on software development, life, and more.
+          {locale === "pt"
+            ? "Pensamentos sobre desenvolvimento de software, vida e muito mais."
+            : "My thoughts on software development, life, and more."}
         </p>
       </BlurFade>
 
